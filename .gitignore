@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Electron build artifacts
+dist/
+out/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+.idea/
+.vscode/

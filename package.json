@@ -1,0 +1,34 @@
+{
+  "name": "countdownmaster",
+  "version": "1.2.0",
+  "description": "none",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "countdown"
+  ],
+  "author": "Burnling",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.4",
+    "electron-builder": "^22.13.1"
+  },
+  "build": {
+    "appId": "asia.Burnling.countdown",
+    "productName": "CountdownMaster",
+    "compression": "normal",
+    "directories": {
+      "output": "dist"
+    },
+    "extraFiles": [
+      {
+        "from": "./assests/events.json",
+        "to": "./assests"
+      }
+    ]
+  }
+}

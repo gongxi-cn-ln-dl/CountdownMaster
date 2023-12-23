@@ -1,0 +1,37 @@
+body {
+  margin: 5px;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#countdownContainer{
+  position: relative;
+}
+
+.countdownWindow {
+  margin-top: 5px;
+  margin-right: 0;
+  background: #ffffff33;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex: 1 1 300px;
+  color:#39ade6
+}
+
+.DaysRemaining {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.eventName {
+  font-size: 32px;
+  font-weight: bold;
+}
