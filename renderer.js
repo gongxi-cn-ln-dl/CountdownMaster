@@ -9,11 +9,12 @@ function renderCountdownWindows(data) {
     const windowStyle = data.window;
 
     // Set window style
-    container.style.width = windowStyle.width;
-    container.style.height = windowStyle.height;
-    container.style.left = windowStyle.left;
-    container.style.top = windowStyle.top;
+    container.style.width = `${windowStyle.width * 100}%`;
+    container.style.height = `${windowStyle.height * 100}%`;
+    container.style.left = `${windowStyle.left * 100}%`;
+    container.style.top = `${windowStyle.top * 100}%`;
 
+    console.log(container.style)
     // Render each event
     data.events.forEach(event => {
         // Create countdown window element
@@ -41,7 +42,7 @@ function renderCountdownWindows(data) {
 
         // Append countdown window to container
         container.appendChild(countdownWindow);
-        container.appendChild(document.createElement("br"));
+        // container.appendChild(document.createElement("br"));
 
         /**
          * Update the countdown

@@ -1,6 +1,6 @@
 {
   "name": "countdownmaster",
-  "version": "1.2.0",
+  "version": "v1.2.0",
   "description": "none",
   "main": "main.js",
   "scripts": {
@@ -24,10 +24,15 @@
     "directories": {
       "output": "dist"
     },
+    "asar":true,
+    "win":{
+      "target":"7z",
+      "icon":"./icon.png"
+    },
     "extraFiles": [
       {
-        "from": "./assests/events.json",
-        "to": "./assests"
+        "from": "./events.json",
+        "to": "./"
       }
     ]
   }
